@@ -1,0 +1,43 @@
+React-router
+
+npm install --save react-router@4.0.0
+
+What is react-router?
+
+this just updates the page without loading a new html/php page
+this reminds me of mvc but for the front-end
+
+An action is any change that can be made to the applications state
+Actions: Payloads of information that send data from your application to your store. 
+
+Actions get dispatched to all reducers, need to have the switch statement fot the action.type in order for the right reducer to handle the right action
+
+
+Action creators
+
+fetch_posts -> gets a list of posts and serves them to the PostsIndex Component
+
+returns an object, which is the action. Must have a type
+for this action creator in order to get the list of posts we need axios to make
+the ajax call as well as redux-promise to handle the response
+
+npm install --save axios redux-promise
+
+redux-promise is a middleware
+
+
+react lifecycle method - there are several of them
+
+The one we are using for the PostsIndex Component is: ComponentDidMount
+
+LOOK UP WHAT A REDUX STORE IS
+
+redux-form
+
+npm install --save redux-form@6.6.3
+
+We are obviously using this package for our forms, I will try to explain step by step what is going on
+
+1st: Import and hook up a reducer from the library in the index.js reducer file. Hook it up to the combineReducers function
+
+for a form the different inputs are all state
